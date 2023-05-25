@@ -14,8 +14,10 @@ Predictions for new infections in Lazio:
 ![image](https://github.com/fraromeo/covid_prediction/assets/64698911/9c9b5c5d-8f33-414a-a757-60ed0344455b)
 
 
+Predictions for new infections in Sicilia:
 ![image](https://github.com/fraromeo/covid_prediction/assets/64698911/e040475c-2a0a-428d-a988-4298601934c4)
 
 
+Predictions for new infections in Lombardia:
 ![image](https://github.com/fraromeo/covid_prediction/assets/64698911/0cfc3406-6899-4188-aa98-c0a06f85bcca)
 
