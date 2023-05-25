@@ -6,6 +6,8 @@ To accomplish this task, two algorithms have been used: Artificial Neural Networ
 
 # ARIMA Model 
 
-An ARIMA model is defined by the values of three parameters (p,d,q). To estiamte these parameters, we built different models and we selected the one that minimizes the Bayesian Information Criterion (BIC). 
+An ARIMA model is defined by the values of three parameters (p,d,q). To estiamte these parameters, we built different models and we selected the one that minimizes the Bayesian Information Criterion (BIC). We trained the model using data from 02-01-2021 to 23-05-2022. The permorfances are evaluated on the following week: 24-05-2022 to 31-05-2022.
 
-The model is good in predicting the trend for new infections, and in particular it obtains a Mean Absolute Error of 64.06 in predicting new infections in Lazio for the week that goes from 24-05-22 to 30-05-22
+The model is good in predicting the trend for new infections. In particular, the model predicts new infections in Lazio with a Mean Absolute Error of 64.06, in Lombardia with a Mean Absolute Error of 37.18 and in Sicilia with a Mean Absolute Error of 130.13.
+
+![image](https://github.com/fraromeo/covid_prediction/assets/64698911/9c9b5c5d-8f33-414a-a757-60ed0344455b)
