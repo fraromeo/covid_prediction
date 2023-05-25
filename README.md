@@ -11,3 +11,10 @@ An ARIMA model is defined by the values of three parameters (p,d,q). To estiamte
 The model is good in predicting the trend for new infections. In particular, the model predicts new infections in Lazio with a Mean Absolute Error of 64.06, in Lombardia with a Mean Absolute Error of 37.18 and in Sicilia with a Mean Absolute Error of 130.13.
 
 ![image](https://github.com/fraromeo/covid_prediction/assets/64698911/9c9b5c5d-8f33-414a-a757-60ed0344455b)
+
+
+![image](https://github.com/fraromeo/covid_prediction/assets/64698911/e040475c-2a0a-428d-a988-4298601934c4)
+
+
+![image](https://github.com/fraromeo/covid_prediction/assets/64698911/0cfc3406-6899-4188-aa98-c0a06f85bcca)
+
