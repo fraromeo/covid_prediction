@@ -29,3 +29,8 @@ When trying to predict deceased and hospitalized we chose to consider the daily 
 
 <img width="647" alt="Schermata 2023-05-25 alle 18 32 38" src="https://github.com/fraromeo/covid_prediction/assets/64698911/80832730-1c7c-482b-96f5-491f39817d7d">
 
+# Team 
+- Davide Carrara [[Github](https://github.com/davidecarrara98)] [[Email](mailto:davide1.carrara@mail.polimi.it)]
+- Caterina Leimer Saglio
+- Francesco Romeo [[Github](https://github.com/fraromeo)] [[Email](mailto:francesco5.romeo@mail.polimi.it)]
+
