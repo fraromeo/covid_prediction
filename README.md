@@ -13,11 +13,19 @@ The model is good in predicting the trend for new infections. In particular, the
 Predictions for new infections in Lazio:
 ![image](https://github.com/fraromeo/covid_prediction/assets/64698911/9c9b5c5d-8f33-414a-a757-60ed0344455b)
 
+This model will be used to predict new infections and recovered patients, while the neural network to predict deceased and hospitalised.
 
-Predictions for new infections in Sicilia:
-![image](https://github.com/fraromeo/covid_prediction/assets/64698911/e040475c-2a0a-428d-a988-4298601934c4)
+# Neural Network 
 
 
-Predictions for new infections in Lombardia:
-![image](https://github.com/fraromeo/covid_prediction/assets/64698911/0cfc3406-6899-4188-aa98-c0a06f85bcca)
+In order to have a meaningful training for our Neural Network, we need to define a training and validation set. The best case scenario would be to consider only the most recent data, since the Omicron variant introduced significant modifications in the magnitude of the reported cases. However, the numerosity of the post-Omicron days is not sufficient for the training: as a consequence we consider data from 01/02/2021 to 05/12/2021 as a pre-peak training set. The training set is completed from the post-peak part, including days from 05/01/2022 to 06/04/2022. The following days create the validation set. The dataset is then created by generating input windows of 14 days, in order to capture a bi-week trend, and choosing as output the prediction for new hospitalized and deceased after seven days. The last step before fitting the network consists in a random resampling of the training set. By choosing to include also older days in our training set we have solved the issue of numerosity, but introduced the one of unbalance. Specifically, we would like more recent training instances to be weighted more during training: as a solution we resample the tuples of our training dataset, with probabilities increased for recent observations.
+
+Moreover, the simple collection of daily deceased and hospitalised is not sufficient to fully represent the phenomenon and proved to be a poor input for our Neural Network. That is why we also provided as input the estimates of first, second and third derivative of these quantities
+
+The performances of the Neural Networks are extremely poor when considering new positives and recovered, while their prediction are good for hospitalized and deceased. The reason is that Omicron changed significantly the evolution of the first two quantities, with a sharp increase in magnitude even after the peak. On the other hand, due to the minor gravity of the infection, the number of hospitalized and deceased remains comparable both before and after the peak.
+
+When trying to predict deceased and hospitalized we chose to consider the daily increments, rather than the cumulative quantities.
+
+
+<img width="647" alt="Schermata 2023-05-25 alle 18 32 38" src="https://github.com/fraromeo/covid_prediction/assets/64698911/80832730-1c7c-482b-96f5-491f39817d7d">
 
